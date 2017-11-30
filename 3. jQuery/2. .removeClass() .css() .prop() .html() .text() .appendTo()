@@ -7,7 +7,6 @@
     $("#target4").text("#target100");                   // change "#target4" text to read "#target100" but do not change the html markup
     $("#target3").remove();                             // completely remove "#target3" button, html, css, from existence on our page
     $("#target5").appendTo("#left-well");               // move button with id "#target5" from "#right-well" to "#left-well"
-    $("#target5").clone().appendTo("#right-well");      // clone "#target5" and move it to "#right-well"
   });
 </script>
 
