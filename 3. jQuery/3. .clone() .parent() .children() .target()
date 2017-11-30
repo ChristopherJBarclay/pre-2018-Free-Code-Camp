@@ -11,6 +11,9 @@
     $("#target5").clone().appendTo("#right-well");                  // clone "#target5" and move it to "#right-well"
     $("#target1").parent().css("background-color", "red");          // change background color of the parent of "#target1" button to red
     $("#right-well").children().css("color", "orange");             // change text color of the children of "#right-well" to orange
+    $(".target:nth-child(2)").addClass("animated bounce");          // target the 2nd child of all parent elements and make them bounce
+    $(".target:even").addClass("animated shake");                   // target all even numbered elements and have them shake
+    $("body").addClass("animated hinge");                           // animate the whole body to unhinge itself from the screen and fadeout
 });
 </script>
 
