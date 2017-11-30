@@ -1,5 +1,5 @@
 <script>
-  $(document).ready(function() {
+  $(document).ready(function() {                // ready function (this happens immediately after your page has loaded)
     $("button").addClass("animated bounce");    // HTML element selector
     $(".well").addClass("animated shake");      // class selector
     $("#target3").addClass("animated fadeOut");   // id selector
