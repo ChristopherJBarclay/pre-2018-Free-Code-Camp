@@ -1,0 +1,36 @@
+<script>
+  $(document).ready(function() {
+    $("#target6").removeClass("btn-default");           // remove "#target6" button class "btn-default"
+    $("#target1").css("color", "red");                  // change the css of #target1 so its color becomes red
+    $("#target1").prop("disabled", true);               // change the property of "#target1" so that the button is disabled
+    $("h3").html("<em>jQuery Playground</em>");         // change the html markup and text of "h3" title and italicize it
+    $("#target4").text("#target100");                   // change "#target4" text to read "#target100" but do not change the html markup
+    $("#target3").remove();                             // completely remove "#target3" button, html, css, from existence on our page
+    $("#target5").appendTo("#left-well");               // move button with id "#target5" from "#right-well" to "#left-well"
+    $("#target5").clone().appendTo("#right-well");      // clone "#target5" and move it to "#right-well"
+  });
+</script>
+
+<!-- Only change code above this line. -->
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
