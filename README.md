@@ -2,7 +2,7 @@
 
 Find Me: https://www.freecodecamp.org/clesoud
 
-The Free Code Camp Front End Certificate taught me to code front end web design using: HTML and CSS, Responsive Design with Bootstrap, jQuery, basic and intermediate JavaScript, and basic, intermediate, and advanced algorithm scripting. There were three basic basic front end development projects, four intermediate front end projects, and four advanced front end projects required to complete the certificate. 
+The Free Code Camp Front End Certificate taught me to code front end web development using: HTML and CSS, Responsive Design with Bootstrap, jQuery, basic and intermediate JavaScript, basic, intermediate, and advanced algorithm scripting. There were three basic front end development projects, four intermediate front end projects, and four advanced projects required to complete the certificate. 
 
 ------------------------------------------------------------------------
     Curriculum details: 
