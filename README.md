@@ -1,6 +1,6 @@
 #FreeCodeCamp - Front End
 
-Find Me: https://www.freecodecamp.org/clesoud
+Find Me:  https://www.freecodecamp.org/clesoud
 
 The Free Code Camp Front End Certificate taught me to code front end web development using: HTML and CSS, Responsive Design with Bootstrap, jQuery, basic and intermediate JavaScript, basic, intermediate, and advanced algorithm scripting. There were three basic front end development projects, four intermediate front end projects, and four advanced projects required to complete the certificate. 
 
@@ -19,6 +19,5 @@ The Free Code Camp Front End Certificate taught me to code front end web develop
                Intermediate Algorithm Scripting:              50 hours
                    Advanced Algorithm Scripting:              50 hours
         Advanced Front End Development Projects:              150 hours
-        
-        
-    *   This is where I am in the curriculum as of last update:  12.30.2017
+       
+    *   I am here as of:  12.30.2017
