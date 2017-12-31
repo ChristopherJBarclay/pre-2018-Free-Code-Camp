@@ -1,0 +1,16 @@
+/* 
+In this challenge, we provide you with a noun, a verb, an adjective and an adverb. You need to form a complete sentence using words of your choice, along with the words we provide. */
+
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "";
+  // Your code below this line
+  
+  var myString="The "+myNoun+" was very "+myAdjective+" while it "+myVerb+" "+myAdverb+".";
+  result = myString;
+  // Your code above this line
+  return result;
+}
+
+// Change the words here to test your function
+wordBlanks("dog", "big", "ran", "quickly");
