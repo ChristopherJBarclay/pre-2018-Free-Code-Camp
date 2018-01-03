@@ -1,5 +1,9 @@
 /* The basics of programming arrays in JS:   
 
-        Arrays, setting and getting array values at specific indexes, Multi-dimensional arrays (nesting arrays within other arrays), 
+    Arrays, setting and getting array values at specific indexes, Multi-dimensional arrays (nesting arrays within other arrays), 
   
-        .push(), .pop(), .shift(), .unshift(), 
+      Array Functions:
+        .push() 
+        .pop() 
+        .shift() 
+        .unshift()
