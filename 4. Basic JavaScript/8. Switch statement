@@ -9,7 +9,7 @@ function caseInSwitch(val) {
       break;
     case 3: answer+="gamma";
       break;
-    case 4: answer+="delta";
+    default: answer+="delta";
       break;
   }
   
