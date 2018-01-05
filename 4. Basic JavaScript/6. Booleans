@@ -1,3 +1,4 @@
 /* Boolean structure and usage:
 
-  true/false, if and else statements
+      true and false, if and else statements, strict vs not strict operators for: 
+      equality (== compares two values vs. === compares data types and values), inequality (!= vs. !==), (> and < vs. >= and <=)
