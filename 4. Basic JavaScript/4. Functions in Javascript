@@ -1,8 +1,8 @@
-/* The basics of programming functions as reusible bits of code in Javascript: 
+/* The basics of programming functions (to use as reusible bits of code) in JS: 
 
      Creating functions, calling functions, passing parameters into functions, scope/visibility of variables, global vs. local variables, 
      the unintended consequences of not using var to declare variables (automatically making them global), 
-     local variable precedence in functions over global variables, returning variables from within functions, 
+     local variable precedence in functions over global variables, returning variables from functions, 
      
      
      
