@@ -1,0 +1,25 @@
+/* The basics of Objects in Javascript:
+
+    Basic object creation:
+        var myDog = {
+          "name": "Fido",
+          "legs": 4,
+          "tails": 1,
+          "friends": ["man", "mud", "other dogs"]
+        };
+        
+       
+   Other concepts:
+      . dot operator (when name of variable is known), 
+      [] bracket notation (when name of variable has a space in it),
+      updating properties of an object      
+      
+      using variable names with bracket notation to obtain value of the variable of an object:
+          var myDog = "Hunter";
+          var dogs = {
+            Fido: "Mutt",
+            Hunter: "Doberman",
+            Snoopie: "Beagle"
+          }
+          var breed = dogs[myDog];
+          console.log(breed);// "Doberman"
