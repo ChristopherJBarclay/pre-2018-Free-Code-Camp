@@ -1,0 +1,24 @@
+/* Random Numbers and Math functions
+
+      Generate random decimal number:
+          Math.random();   // generates random decimal number between 0 and not quite 1
+          
+      Round down decimal number to a whole number:
+          Math.floor();  
+          
+      Generate random whole numbers:
+          var ranDec = Math.random();   // generate random decimal number
+          var rand = ranDec * 10;       // multiply decimal by 10 getting a whole number with decimals
+          var ranNum = Math.floor(rand)   // round down the whole number with decimals to nearest whole number without decimals
+          
+          var random = Math.floor(Math.random() * 10);    // generate random whole number between 0 and 9 in one line
+          
+      Generate random whole numbers between Minimum (min) and Maximum (max) values:
+          var random = Math.floor(Math.random() * (max - min + 1)) + min
+          
+      Function to generate random whole numbers between minimum and maximum values: 
+           function randomRange(myMin, myMax) {
+              return Math.floor(Math.random() * (myMax - myMin + 1) + myMin); // Change this line
+           }
+      
+*/
