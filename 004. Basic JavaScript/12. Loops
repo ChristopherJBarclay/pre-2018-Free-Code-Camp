@@ -1,0 +1,20 @@
+/*
+    Types of Loops:
+           
+           For Loops:            for ([initialization]; [condition]; [final-expression]) {loop execution code}
+                initialization statement
+                condition statement
+                final expression
+                
+           Other For Loop Examples:
+                counting even or odd numbers only
+                counting backwards with -= in the final expression
+                iterate through an array
+                
+                Nesting For Loops to iterate through multi-dimensional arrays.
+                
+                
+           While Loops:         while([condition]) {loop execution code}
+                
+
+*/
