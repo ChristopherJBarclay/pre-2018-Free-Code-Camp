@@ -1,0 +1,18 @@
+/* Nested For Loop to iterate through a Multi-Dimensional Array: */
+
+function multiplyAll(arr) {
+  var product = 1;
+  // Only change code below this line
+  
+  for (var first = 0; first < arr.length; first++) {
+    for (var second = 0; second < arr[first].length; second++) {
+      product*=arr[first][second];
+    }
+  }
+  
+  // Only change code above this line
+  return product;
+}
+
+
+/* */
