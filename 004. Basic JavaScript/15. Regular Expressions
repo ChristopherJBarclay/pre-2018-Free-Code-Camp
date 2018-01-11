@@ -17,11 +17,18 @@ Regular Expressions:
 Special Selectors:
 
   Digit selector: \d
-    /\d/g       retrieves one digit in a string
+    /\d/g       retrieves number characters in a string
   Appending a plus sign (+) after the selector, e.g. /\d+/g, allows this regular expression to match one or more digits.
     /\d+/g      returns the number of digits in a string
     
+    
   White Space selector: 
-    \s          retrieves a whitespace character from the string
+    \s          retrieves whitespace characters from a string
   The whitespace characters are " " (space), \r (the carriage return), \n (newline), \t (tab), and \f (the form feed).
     /\s+/g      retrieves all the white space characters in a string
+
+
+  Inverting special selectors:
+    Use a capital letter to get the opposite of the special selector.
+      \s will get whitespace characters and \S will get every character that is not whitespace
+        /\S+/g      retrieves all non-whitespace characters in a string.
