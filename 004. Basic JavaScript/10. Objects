@@ -20,14 +20,18 @@
         
   ------------------------------
    Other basic Object concepts:
+   
         . dot operator (when name of variable is known) 
         [] bracket notation (when name of variable has a space in it)
-        Updating properties of an object.
+        Updating properties of an object by assigning new values to object properties.
         Adding new properties to objects using .dot operator or []bracket notation.
         Objects are key/value storage and can be used to "look up" tabular data instead of switch and if/else statements.
         delete object.property       to delete a property from an object.
         .hasOwnProperty(propname)       to check if a property of an object exists.   
-        Flexible data structures
-      
+        
+        Flexible data structures with arrays that contain complex objects with their own nested arrays inside. 
+        
+        JSON == JavaScript Object Notation == a text format, which is language independent, and uses conventions that are
+            familiar to programmers of the C-family of languages, including: C, C++, C#, Java, JavaScript, Perl, Python, etc.
       
       
