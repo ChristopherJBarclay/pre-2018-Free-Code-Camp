@@ -1,6 +1,8 @@
 /*
     Types of Loops:
            
+           While Loops:         while([condition]) {loop execution code}
+           
            For Loops:            for ([initialization]; [condition]; [final-expression]) {loop execution code}
                 initialization statement
                 condition statement
@@ -12,9 +14,5 @@
                 iterate through an array
                 
                 Nesting For Loops to iterate through multi-dimensional arrays.
-                
-                
-           While Loops:         while([condition]) {loop execution code}
-                
-
+ 
 */
