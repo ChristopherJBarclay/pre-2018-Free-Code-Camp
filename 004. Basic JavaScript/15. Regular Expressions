@@ -1,10 +1,9 @@
 /* Regular Expressions
 
-Regular Expressions:
-  Regular expressions are used to find certain words or patterns inside of strings.
-    For example, if we wanted to find the word "the" in the string "The dog chased the cat"
-      we could use the following Regular Expression: 
-        /the/gi
+ Regular expressions are used to find certain words or patterns inside of strings.
+   For example, if we wanted to find the word "the" in the string "The dog chased the cat"
+     we could use the following Regular Expression: 
+       /the/gi
 
   Let's break this down a bit:
     / is the start of the regular expression.
@@ -31,4 +30,7 @@ Special Selectors:
   Inverting special selectors:
     Use a capital letter to get the opposite of the special selector.
       \s will get whitespace characters and \S will get every character that is not whitespace
-        /\S+/g      retrieves all non-whitespace characters in a string.
+        /\S/g      retrieves all non-whitespace characters in a string. Do not need a + for this.
+
+
+*/
