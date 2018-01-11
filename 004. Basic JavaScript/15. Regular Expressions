@@ -1,9 +1,10 @@
-/* Regular Expressions:
+/* Regular Expressions
 
-Regular expressions are used to find certain words or patterns inside of strings.
-  For example, if we wanted to find the word "the" in the string "The dog chased the cat"
-    we could use the following Regular Expression: 
-      /the/gi
+Regular Expressions:
+  Regular expressions are used to find certain words or patterns inside of strings.
+    For example, if we wanted to find the word "the" in the string "The dog chased the cat"
+      we could use the following Regular Expression: 
+        /the/gi
 
   Let's break this down a bit:
     / is the start of the regular expression.
@@ -12,3 +13,15 @@ Regular expressions are used to find certain words or patterns inside of strings
     g means global, which causes the pattern to return all matches in the string, not just the first one.
     i means that we want to ignore the case (uppercase or lowercase) when searching for the pattern.
 
+
+Special Selectors:
+
+  Digit selector: \d
+    /\d/g       retrieves one digit in a string
+  Appending a plus sign (+) after the selector, e.g. /\d+/g, allows this regular expression to match one or more digits.
+    /\d+/g      returns the number of digits in a string
+    
+  White Space selector: 
+    \s          retrieves a whitespace character from the string
+  The whitespace characters are " " (space), \r (the carriage return), \n (newline), \t (tab), and \f (the form feed).
+    /\s+/g      retrieves all the white space characters in a string
