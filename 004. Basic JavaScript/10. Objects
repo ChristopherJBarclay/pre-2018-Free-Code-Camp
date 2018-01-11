@@ -32,9 +32,6 @@
    Basic Functions:     
         delete object.property       to delete a property from an object.
         .hasOwnProperty(propname)       to check if a property of an object exists.   
-   
-   Loops: 
-        
         
    Structures:     
         Flexible Data Structure == an array that contain complex objects with their own nested arrays inside. 
