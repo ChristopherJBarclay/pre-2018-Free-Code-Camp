@@ -7,7 +7,7 @@ var testString = "Ada Lovelace and Charles Babbage designed the first computer a
 var expressionToGetSoftware = /software/gi;
 var softwareCount = testString.match(expressionToGetSoftware).length;
   
-
+// Your turn:
 // Only change code below this line.
 
 var expressionToGetAnd = /and/gi;  // Change this Line
@@ -17,7 +17,4 @@ var expressionToGetAnd = /and/gi;  // Change this Line
 // This code counts the matches of expression in testString
 var andCount = testString.match(expressionToGetAnd).length;
 
-
-
-/* Example of Special Selectors: */
-
+/* */
