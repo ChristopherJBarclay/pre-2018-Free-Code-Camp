@@ -1,0 +1,89 @@
+/*  Object / Array functions
+  
+    .map
+        the map function iterates through every element in an array and creates a new array with modified values
+         without changing the original array 
+          eg:
+            var oldArray = [1, 2, 3];
+            var timesFour = oldArray.map(function(val){
+                return val * 4;
+            });
+            console.log(timesFour); // returns [4, 8, 12]
+            console.log(oldArray);  // returns [1, 2, 3]
+    
+    
+    Accumulator
+        an accumulator is a running total that keeps track after each iteration of the .reduce function
+    
+    
+
+    .reduce
+        condenses an array to one value
+          eg:
+            var singleVal = array.reduce(function(previousVal, currentVal) {
+                return previousVal - currentVal;
+            }, 0);
+        reduce can have an optional second parameter which sets the accumulator's initial value 
+        if no value is set, the first element of the array is the initial value and currentVal becomes the second element of the array
+ 
+ 
+ 
+     .filter
+        iterate through an array and filter out elements when a given condition is not true (using a callback function)
+          eg:
+             array = array.filter(function(val) {
+                return val !== 5;
+              });
+        .filter can have a second and third argument, which are not shown in the example above
+        
+        
+        
+     .sort
+        easily sort the values in an array alphabetically or numerically
+        .sort alters the original array and returns it
+        .sort can be passed a compare function as a callback
+        if no comparing callback function is passed in, it will convert the numeric values to strings and sort them alphabetically
+          eg:
+             var array = [1, 12, 21, 2];
+             array.sort(function(a, b) {
+                return a - b;
+             });
+     
+     
+     
+     .reverse
+        reverse the elements of an array
+        altars the original array and returns it
+        
+        
+     
+     .concat
+        merge two strings together; concatenate strings
+        takes an array as an argument and returns a new array with the elements of this array concatenated onto the end
+          eg:
+            newArray = oldArray.concat(concatMe);
+         concatenates concatMe onto the end of oldArray and assigns this new array to newArray
+        
+        
+        
+     .split
+        split a string into an array
+          eg:
+            var array = string.split('s');
+        splits the string into an array at every 's' character
+        
+        
+        
+     .join
+        joins each element of an array into one string, separated by whatever delimiter provided as an argument
+          eg:
+            var veggies = ["Celery", "Radish", "Carrot", "Potato"];
+            var salad = veggies.join(" and ");
+            console.log(salad); // "Celery and Radish and Carrot and Potato" 
+       joins all of the elements the array into a string, with all elements separated by the word 'and' with a space on each end
+        
+        
+        
+        
+        
+        
