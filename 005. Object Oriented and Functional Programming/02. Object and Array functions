@@ -1,4 +1,4 @@
-/*  Object / Array functions
+/*  Object and Array functions
   
     .map
         the map function iterates through every element in an array and creates a new array with modified values
