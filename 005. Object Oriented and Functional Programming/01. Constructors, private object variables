@@ -1,0 +1,23 @@
+/* Object Oriented Programming concepts 
+    
+   Constructors for functions: 
+      Constructor function (which initializes a specific instance of an object), 
+      capital first letters of constructor variable names to signify they are constructors, 
+      'this' tells javascript we are talking about this specific object, 
+      'new' in front of an object declaration to create an instance of an object,
+      constructors with parameters to create unique objects 
+          eg: 
+            var Car = function(wheels, horsePower, seats) {
+              this.wheels = wheels;
+              this.horsePower = horsePower;
+              this.seats = seats;
+            };
+           
+            
+    Private and Public variables within a function:        
+       objects have their own attributes, called properties and their own functions, called methods,
+       private vs public properties and methods, 
+       using 'var' inside a constructor to reference private, and 'this' to reference public 
+
+    
+*/
