@@ -1,0 +1,29 @@
+/*  Object functions
+  
+    .map
+        the map function iterates through every element in an array and creates a new array with modified values
+         without changing the original array 
+          eg:
+            var oldArray = [1, 2, 3];
+            var timesFour = oldArray.map(function(val){
+                return val * 4;
+            });
+            console.log(timesFour); // returns [4, 8, 12]
+            console.log(oldArray);  // returns [1, 2, 3]
+    
+    
+    .reduce
+        condenses an array to one value
+          eg:
+            var singleVal = array.reduce(function(previousVal, currentVal) {
+                return previousVal - currentVal;
+            }, 0);
+        reduce can have an optional second parameter which sets the accumulator's initial value. 
+        if no value is set, the first element of the array is the initial value and currentVal becomes the second element of the array.
+            
+     Accumulator
+        an accumulator is a running total that keeps track after each iteration of the .reduce function
+     
+     
+     .filter
+        
