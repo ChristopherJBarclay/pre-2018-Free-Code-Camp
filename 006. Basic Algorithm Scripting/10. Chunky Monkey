@@ -1,0 +1,19 @@
+/* split array into groups...
+    each group is the size of var 'size'
+      for loop from 0 index to end of array, increment by 'size' var
+        .slice() from current index to current index + 'size' var
+          .push() each of these to the new array
+*/
+
+function chunkArrayInGroups(arr, size) {
+  var newArr = [];
+  
+  for (i=0;i<arr.length;i+=size) {
+    newArr.push( arr.slice(i, i+size) );
+  }
+  
+  return newArr;
+}
+
+//test:
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
