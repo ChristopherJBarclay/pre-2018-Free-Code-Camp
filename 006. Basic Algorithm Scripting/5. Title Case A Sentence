@@ -1,0 +1,28 @@
+/* split the string into an array via whitespaces
+  then for loop through the array, split each word into new arrays and capitalize the first letter
+  using: .toUpperCase()
+*/
+
+function titleCase(str) {
+  // split array by whitespace and lower case every character
+  var array = str.toLowerCase().split(' ');
+  
+  
+  for (i=0; i<array.length; i++) {
+    
+    // string at array index 'i'  is split into a new array variable
+    var newArr = array[i].split('');
+    // capitalize first char of new array
+    newArr[0] = newArr[0].toUpperCase();
+    // then .join it back into a new string
+    var newStr = newArr.join('');
+    
+    // replace array element at index 'i' with the new string
+    array[i] = newStr;
+  }
+  
+  // concatenate a string from the array, seperated with whitespaces
+  return array.join(' ');
+}
+
+titleCase("I'm a little tea pot");
