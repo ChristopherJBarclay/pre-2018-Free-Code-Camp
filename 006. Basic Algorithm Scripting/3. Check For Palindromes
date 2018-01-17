@@ -1,0 +1,33 @@
+// first, .replace with regular expressions to strip the non-alphanumeric characters from the string 
+// then, make all letters lowercase with .toLowerCase();
+// then, reverse the string using .split(); .reverse(); and .join();
+// finally, compare the reversed string to the first string with ==
+
+
+function palindrome(str) {
+  // create new string and .replace() all white space and underscores with nothing
+  // then make string lowercase with .toLowerCase();
+  var newStr = str.replace( /[\W_]/g, '' ).toLowerCase();
+  
+  // create array using .split() then reverse with .reverse() then .join() it back together
+  var reversed = newStr.split('').reverse().join('');
+  
+  
+  if (reversed===newStr) {
+    return true;
+  } else {
+    return false; 
+  }
+}
+
+
+/* much faster way to type this:
+
+function palindrome(str) {
+  return str.replace(/[\W_]/g, '').toLowerCase() ===
+    str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+}
+*/
+
+//test: 
+palindrome("good");
