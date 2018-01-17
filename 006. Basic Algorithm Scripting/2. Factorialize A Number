@@ -1,0 +1,18 @@
+function factorialize(num) {
+  
+  // create 'product' var and initialize to 1
+  var product = 1;
+  
+  // for loop from 1 to 'num' var 
+  for (i=1; i<=num; i++) {
+    
+    // each run of the loop, multiply 'product' var by loop counter 'i'
+    product*=i;
+  }
+  
+  // return 'product' var at the end, as this will be the factorial of the given number
+  return product;
+}
+
+// test
+factorialize(5);
