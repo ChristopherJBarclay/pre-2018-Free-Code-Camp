@@ -1,0 +1,16 @@
+
+function reverseString(str) {
+
+  // .split to spit a string into an array, separate string by each character with ''
+  var forwards = str.split('');
+  
+  // .reverse to reverse the elements of our array
+  var reversed = forwards.reverse();
+  
+  // .join to join the array back together into a string. then return that string. 
+  var newStr = reversed.join('');
+      
+  return newStr;
+}
+
+reverseString("hello nice to meet you");
