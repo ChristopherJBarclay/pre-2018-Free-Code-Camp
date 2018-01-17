@@ -1,0 +1,20 @@
+
+function truncateString(str, num) {
+  var newStr = '';
+  
+  // if num is less than 4, slice until num and add dots
+  if (num <= 3) {
+    newStr = str.slice(0,num);
+  } else if (str.length > num) {
+    // if num is greater than 3, slice until num-3 to provide space for the dots, then add dots
+    newStr = str.slice(0,num-3);
+  } else {
+    return str;
+  }
+  
+  // add dots to end of string unless num is the length of str
+  return newStr+"...";
+}
+
+//test:
+truncateString("A-", 1);
