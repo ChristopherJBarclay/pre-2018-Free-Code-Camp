@@ -1,1 +1,11 @@
+// Challenge: use .substring to see if the end of a string is the same as another string
 
+function confirmEnding(str, target) {
+  // .substring takes two arguments: first is the index to begin (0 is first index),
+  // the second is index to end (not including that number), so end with str.length
+  
+  return str.substring((str.length-1)-(target.length-1), str.length) === target;
+}
+
+//test: 
+confirmEnding("He has to give me a new name", "name");
