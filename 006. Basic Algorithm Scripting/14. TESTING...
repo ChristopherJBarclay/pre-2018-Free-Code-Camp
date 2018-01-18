@@ -1,0 +1,52 @@
+// Remove all the values
+
+function destroyer(arr) {
+  // create filter list filterMe and fill it with all elements in arr except arr[0]
+  var filterMe = [];
+  
+  for (var z = 1; z<arr.length; z++) {
+    filterMe.push(arr[z]);
+  }
+  console.log("Remove these values: "+filterMe);
+  
+  // create a list of numbers which represent the indexes of arr elements to filter
+  var filterIndex = [];
+  
+  // for loop through arr[0]
+  for (var y = 0; y<arr[0].length; y++) {
+    // for loop through filterMe 
+    for (var x = 0; x<filterMe.length; x++) {
+      // if arr[0][y] === filterMe[x]
+      if (arr[0][y]===filterMe[x]) {
+        // push the index 'x' to filterIndex
+        filterIndex.push(x);   // will contain list of all indexes to splice.
+      }
+    }
+  }
+  console.log("Indexes to Cut: "+filterIndex);
+  
+  // new array to hold elements not cut from old arr[0]
+  var newArray = [];
+  // keep track of how many indexes have been cut with 'count'
+  var count = 0;
+  
+  // iterate through filterIndex 
+  for (var q=0; q<filterIndex.length; q++) {
+    // for loop through arr[0] again to find values not to cut
+    for (var r=0; r<arr[0].length; r++) {
+      // if filterIndex[q]===r then skip that number
+      if (filterIndex[q]===r) {  // keep track of which filterIndex we're at with 'q'
+        // skip and add 1 to 'count'
+        count++;
+      } else {
+        newArray.push(arr[0][r-count]);  // will only pick up the arr[0] elements not skipped
+      }
+    }
+  }
+  console.log("New, Filtered Array: "+newArray);
+  return newArray;
+}
+
+
+//test:
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
