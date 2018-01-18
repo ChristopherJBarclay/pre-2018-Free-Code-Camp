@@ -1,1 +1,91 @@
+// this challenge was difficult for me.... I had to start over twice.
 
+function mutation(arr) {
+  // split arr[0] into a new array named 'sorted0' and make all chars lowercase
+  var sorted0 = arr[0].split('');
+  for (var i=0;i<sorted0.length;i++) {
+    sorted0[i] = sorted0[i].toLowerCase();
+  }
+  
+  // split arr[1] into a new array named 'sorted1' and make all chars lowercase
+  var sorted1 = arr[1].split('');
+  for (var j=0;j<sorted1.length;j++) {
+    sorted1[j] = sorted1[j].toLowerCase();
+  }
+  
+  // for loop through 'sorted1', which is an all lower case version of arr[1], and see if each char is found
+  for (var a=0;a<sorted1.length;a++) {
+    if ( sorted0.includes(sorted1[a]) ) {
+      // do nothing if it is found, continue for loop to the end and return true at end
+    } else {
+      // if it is not found in sorted0, then return false, breaking the loop and ending the function
+      return false;
+    }
+  }
+  
+  return true;
+}
+
+//test:
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]);
+
+
+
+
+
+// the following code did not work: 
+
+// create array with a number of boolean values equal to arr[1].length
+// run a for loop that checks to see if arr[0] contains each letter of arr[1]
+
+/*
+function mutation(arr) {
+  // create array to store boolean values
+  var arrCheck = [];
+  
+  // make all of arr[0] lower case
+  arr[0]=arr[0].split('');
+  for (var a=0;a<arr[0].length;a++) {
+    arr[0][a].toLowerCase();
+  }
+  
+  
+  // make all of arr[1] lower case
+  arr[1]=arr[1].split('');
+  for (var b=0;b<arr[1].length;b++) {
+    arr[1][b].toLowerCase();
+  }
+  
+  
+  
+  // for loop goes for arr[1].length
+  for (var i=0;i<arr[1].length;i++) {
+    // inner for loop goes for arr[0].length
+    for (var j=0;j<arr[0].length;j++) {
+      // if arr[1][i]===arr[0][j];
+      if (arr[0][j]===arr[1][i]) {
+        // break if char is found and arrCheck[i] = true;
+        arrCheck[i] = true;
+        break;
+      }
+    }
+    // if not found, break second for loop and arrCheck[i] = false;
+    arrCheck[i] = false;
+    break;
+  }
+  
+  // .join the arrays back into strings
+  arr[0]=arr[0].join('');
+  arr[1]=arr[1].join('');
+  
+  
+  for (var h=0;h<arrCheck.length;h++) {
+    // for loop to check all of arrCheck to see if they are true
+    if (arrCheck[h]===false) {
+      return false;
+    }
+  }
+  
+  return true;
+}
+*/
