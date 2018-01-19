@@ -1,0 +1,25 @@
+
+function getIndexToIns(arr, num) {
+  // need to rewrite the sort function with a compare function for numbers
+  var sorted = arr.sort(function(a, b){return a-b;});
+  var check = 0;
+  var index = 0;
+  
+  for (var a=0;a<arr.length;a++) {
+    check = sorted[a];
+    
+    if (check===num) {
+      index = a;
+      break;
+    } else if (check<num) {
+      index++;
+    } else if (check>num) {
+      
+      break;
+    }
+  }
+  
+  return index;
+}
+
+getIndexToIns([3, 3, 20, 5], 5);
