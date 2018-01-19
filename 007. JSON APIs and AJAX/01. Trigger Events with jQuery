@@ -1,0 +1,11 @@
+
+
+<script>
+  $(document).ready(function() {
+    // Only change code below this line.
+    $("#getMessage").on("click", function() {
+      // this is a click event handler
+    });
+    // Only change code above this line.
+  });
+</script>
