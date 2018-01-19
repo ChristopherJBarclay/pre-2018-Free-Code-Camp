@@ -8,6 +8,8 @@ function getIndexToIns(arr, num) {
   for (var a=0;a<arr.length;a++) {
     check = sorted[a];
     
+    // if current number is same as num, index is counter, end loop. 
+    // if it is less than num, add 1 to index. if it's bigger than num, it's between them, end loop    
     if (check===num) {
       index = a;
       break;
