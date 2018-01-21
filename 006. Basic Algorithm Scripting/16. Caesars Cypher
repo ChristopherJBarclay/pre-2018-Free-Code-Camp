@@ -1,4 +1,4 @@
-// this is the extremely long way to do this...
+// this is the probably the extremely long way to do this...
 
 function rot13(str) { // LBH QVQ VG!
   // create array with every letter of the alphabet and a number 0-25 as properties
@@ -30,6 +30,9 @@ function rot13(str) { // LBH QVQ VG!
     ['y',24],
     ['z',25]
   ];
+  // ^ could also write this: var alphanum = /[a-z]/ ;
+  // or save yourself code in the future of toLowerCase() and then back to toUpperCase() by staying in uppercase the whole time
+  // var alphanum = /[A-Z]/ ;
   
   var array = str.toLowerCase().split('');
   var translating = [];
