@@ -1,0 +1,76 @@
+// this is the extremely long way to do this...
+
+function rot13(str) { // LBH QVQ VG!
+  // create array with every letter of the alphabet and a number 0-25 as properties
+  var alphanum = [
+    ['a',0],
+    ['b',1],
+    ['c',2],
+    ['d',3],
+    ['e',4],
+    ['f',5],
+    ['g',6],
+    ['h',7],
+    ['i',8],
+    ['j',9],
+    ['k',10],
+    ['l',11],
+    ['m',12],
+    ['n',13],
+    ['o',14],
+    ['p',15],
+    ['q',16],
+    ['r',17],
+    ['s',18],
+    ['t',19],
+    ['u',20],
+    ['v',21],
+    ['w',22],
+    ['x',23],
+    ['y',24],
+    ['z',25]
+  ];
+  
+  var array = str.toLowerCase().split('');
+  var translating = [];
+  
+  // outer for loop runs through entire string.length
+  for (var a = 0; a < str.length; a++) {
+    // white space and punctuation does not get changed
+    // if not array at position 'a' matches alphabetic characters a-z (using regular expressions)
+    if (! array[a].match(/[a-z]/) ) {
+      translating.push(array[a]);  // push as is
+    } else {
+    
+    var codedLetter = array[a];
+    var indexNum = -1;
+    // locate this letter in alphanum array
+    for (var i = 0; i < 26; i++) {
+      if (alphanum[i][0]===codedLetter) {
+        indexNum = i;
+        break;
+      }
+    }
+    // here's where rot13 comes into play
+    indexNum+=13;
+    if (indexNum>25) {
+      indexNum-=26;   // if num===26, we want that to be 0, so minus 26
+    }
+    // find the indexNum again and assign it.  
+    var decodedLetter = '';
+    for (var j = 0; j < 26; j++) {
+      if (alphanum[j][1]===indexNum) {
+        decodedLetter = alphanum[j][0];
+        break;
+      }
+    }
+    translating.push(decodedLetter);  
+  } // end of outer for loop
+  } // end of else statement
+  var translation = translating.join('').toUpperCase();
+  
+  return translation;
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
