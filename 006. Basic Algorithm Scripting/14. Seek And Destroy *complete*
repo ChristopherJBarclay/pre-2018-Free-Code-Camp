@@ -1,0 +1,20 @@
+// 5th attempt... remove all values passed as arguments to our function (after first argument) 
+//                      from the array passed to our function as the first argument
+
+function destroyer(arr) {  
+  var argsArr = Array.from(arguments).slice(1);      
+  // create a new array object from() the arguments of the function, by slicing off index 0
+  
+  for (var i=0; i<arr.length; i++) {            // cycle through array
+    for (var j=0; j<argsArr.length; j++) {      // cycle through arguments
+      if (arr[i]===argsArr[j]) {             // if array at index 'i' equals arguments at position 'j'
+        delete arr[i];                       // ... delete array at index 'i'
+      }
+    }
+  }
+  
+  var newArr = arr.filter(Boolean);  // filter 'arr' for any nulls created by using delete
+  return newArr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
