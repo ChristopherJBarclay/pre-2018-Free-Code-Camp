@@ -20,4 +20,4 @@ The Free Code Camp Front End Certificate taught me to code front end web develop
                    Advanced Algorithm Scripting:              50 hours
         Advanced Front End Development Projects:              150 hours
        
-    *   I am here as of:  1.24.18
+            *   I am here as of:  1.24.18
