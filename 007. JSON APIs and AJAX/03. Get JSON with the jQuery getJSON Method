@@ -1,0 +1,38 @@
+<script>
+
+// document ready function (only executes code inside once the page has loaded)
+  $(document).ready(function() {
+  
+  
+    // click event function (event happens upon click of button with 'message' class)
+    $("#getMessage").on("click", function(){
+    
+    
+      // get JSON object properties from FreeCodeCamp's Cat Photo API. API = application programming interface, how computers talk to each other
+      
+      $.getJSON('/json/cats.json', function(json) {
+        $('.message').html(JSON.stringify(json));
+      });
+      
+    });
+  });
+</script>
+
+
+<div class="container-fluid">
+  <div class = "row text-center">
+    <h2>Cat Photo Finder</h2>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12 well message">        // here is the '.message' class
+      The message will go here
+    </div>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12">
+      <button id = "getMessage" class = "btn btn-primary">            // here is the '#getMessage' id
+        Get Message
+      </button>
+    </div>
+  </div>
+</div>
