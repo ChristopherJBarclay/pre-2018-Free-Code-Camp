@@ -1,11 +1,16 @@
 
 
 <script>
+
+  // This is the document ready function of jQuery, which only executes once the entire page has loaded (very useful!)
   $(document).ready(function() {
-    // Only change code below this line.
+    
+    // This is the click event handler, which displays a message (using id '#getMessage' ) when the button with 'message' class is clicked.
     $("#getMessage").on("click", function() {
-      // this is a click event handler
+      
+     
     });
-    // Only change code above this line.
+   
   });
+  
 </script>
