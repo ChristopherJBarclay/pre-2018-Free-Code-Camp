@@ -1,0 +1,5 @@
+// Use this code to filter the cat photo with id '1'
+
+        json = json.filter(function(val) {
+          return (val.id !== 1);
+        });
