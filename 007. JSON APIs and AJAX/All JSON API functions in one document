@@ -7,7 +7,7 @@
         });
         
         
-2)  // click event handler for when a user clicks on an HTML elements
+2)  // click event handler using jQuery for when a user clicks on an HTML elements
         $("#getMessage").on("click", function() { 
           // code here
         });
