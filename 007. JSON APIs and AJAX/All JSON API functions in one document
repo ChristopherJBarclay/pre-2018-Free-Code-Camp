@@ -1,0 +1,69 @@
+// The following are all JSON API functions we have learned in this section of Free Code Camp...
+
+
+1)  // document ready function (all code inside will only execute once the page has loaded)
+        $(document).ready(function() {
+          // code goes here
+        });
+        
+        
+2)  // click event handler for when a user clicks on an HTML elements
+        $("#getMessage").on("click", function() { 
+          // code here
+        });
+    
+    
+3)  // get JSON information from a URL
+        $.getJSON('/json/cats.json', function(json) {
+            $('.message').html(JSON.stringify(json));       // this will return a string of code, not information or images
+         });
+    
+    
+4)  // convert obtained JSON data to HTML, so user can read and understand the data 
+        var html = "";
+        
+        json.forEach(function(val) {                  // .forEach is a quick way to do a for loop for every element of an array
+          var keys = Object.keys(val);                // assign all keys of the Object to var keys. Object is each item in the JSON data
+          html += "<div class = 'cat'>";              // add <div class = 'cat'> to the html variable
+          keys.forEach(function(key) {                // for each key, add this to var html ...
+            html += "<strong>" + key + "</strong>: " + val[key] + "<br>";   //   <strong>Object.key</strong>: (currentValue[Object.key])<br>
+          });
+          html += "</div><br>";                       // finally add </div><br> to end of each Object.key
+        });
+        
+        // this creates a very long 'html' variable that will look like this:
+           /* <div class = 'cat'>
+                 <strong>key1</string>: val[key1]<br>
+                 <strong>key2</string>: val[key2]<br>
+                 <strong>key3</string>: val[key3]<br>
+              </div><br>
+           */
+    
+    
+5)  // display JSON data to element with class '.message'
+        $(".message").html(html);                      
+    
+  
+  
+  
+  
+  
+// here is the HTML we were working with for the above functions:
+
+<div class="container-fluid">
+  <div class = "row text-center">
+    <h2>Cat Photo Finder</h2>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12 well message">        // here is the '.message' class
+      The message will go here
+    </div>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12">
+      <button id = "getMessage" class = "btn btn-primary">            // here is the '#getMessage' id
+        Get Message
+      </button>
+    </div>
+  </div>
+</div>
