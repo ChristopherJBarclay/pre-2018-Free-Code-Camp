@@ -13,7 +13,7 @@
         });
     
     
-3)  // get JSON information from a URL
+3)  // get JSON information from a URL and display the raw code information
         $.getJSON('/json/cats.json', function(json) {
             $('.message').html(JSON.stringify(json));       // this will return a string of code, not information or images
          });
@@ -44,7 +44,16 @@
         $(".message").html(html);                      
     
   
-  
+6)  // render images using obtained JSON data  
+        html += "<img src = '" + val.imageLink + "'" + "alt ='" + val.altText + "'>";
+          // <img src = 'val.imageLink' alt='val.altText'>   HTML code will be added for each object in the JSON data 
+
+
+7)  // filter out objects from the JSON data
+        json = json.filter(function(val) {
+          return (val.id !== 1);
+        });
+            // (this will filter the second cat photo we obtained from JSON)
   
   
   
