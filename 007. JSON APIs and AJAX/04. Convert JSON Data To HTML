@@ -1,0 +1,37 @@
+/* Convert JSON Data To HTML
+Now we are getting data from a JSON API, so let's display it in our HTML.
+Use the .forEach() method to loop through our data and modify our HTML elements.
+Loop through our JSON, adding more HTML to var html. When the loop is finished, render it.
+*/
+
+<script>
+  $(document).ready(function() {                      // document ready function (code executes after page has loaded)
+
+    $("#getMessage").on("click", function() {           // click event on #getMessage
+      $.getJSON("/json/cats.json", function(json) {       // get JSON data from /json/cats.json
+      
+// convert JSON data to HTML
+        var html = "";
+        
+        json.forEach(function(val) {
+          var keys = Object.keys(val);                // assign all keys of the Object to var keys. Object is each item in the JSON data
+          html += "<div class = 'cat'>";              // add <div class = 'cat'> to the html variable
+          keys.forEach(function(key) {                // for each key, add this to var html ...
+            html += "<strong>" + key + "</strong>: " + val[key] + "<br>";   //   <strong>Object.key</strong>: (currentValue[Object.key])<br>
+          });
+          html += "</div><br>";                       // finally add </div><br> to end of each Object.key
+        });
+                                                      // this creates a very long 'html' variable that will look like this:
+                                                      /* <div class = 'cat'>
+                                                           <strong>key1</string>: val[key1]<br>
+                                                           <strong>key2</string>: val[key2]<br>
+                                                           <strong>key3</string>: val[key3]<br>
+                                                         </div><br>
+                                                      */
+// add html variable to div with class '.message'
+      $(".message").html(html);                       // display no-longer raw JSON data
+// close document ready functions and other functions
+      });
+    });
+  });
+</script>
