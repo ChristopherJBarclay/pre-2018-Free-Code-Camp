@@ -1,0 +1,28 @@
+<script>
+  $(document).ready(function() {
+
+    $("#getMessage").on("click", function() {
+      $.getJSON("/json/cats.json", function(json) {
+
+        var html = "";
+
+        json.forEach(function(val) {
+
+          html += "<div class = 'cat'>";
+
+ // this will add <img src = 'val.imageLink' alt='val.altText'> for each object in the JSON data 
+ 
+          html += "<img src = '" + val.imageLink 
+            + "'" + "alt ='" + val.altText + "'>";
+
+
+          html += "</div>";
+
+        });
+
+        $(".message").html(html);
+
+      });
+    });
+  });
+</script>
