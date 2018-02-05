@@ -1,1 +1,35 @@
 
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  
+  // if either array is empty, return the other array.
+  if (arr1.length === 0) {
+    return arr2;
+  } else if (arr2.length === 0) {
+    return arr1;
+  }
+  
+  for (var a = 0; a < arr1.length; a++) {        // need double for loops to check both arrays
+    for (var b = 0; b < arr2.length; b++) {
+      
+      if (! arr2.includes(arr1[a]) ) {          // if arr2 does not include arr1 at position 'a'
+        newArr.push(arr1[a]);
+      }  
+        
+    }
+  }
+  
+  for (var c = 0; c < arr2.length; c++) {      // do it all again to check arr2
+    for (var d = 0; d < arr1.length; d++) {
+      
+      if (! arr1.includes(arr2[c]) ) {          // if arr1 does not include arr2 at position 'c'
+        newArr.push(arr2[c]);
+      }
+      
+    }
+  }
+  
+  return newArr;
+}
+
+diffArray([], ["snuffleupagus", "cookie monster", "elmo"]);
