@@ -14,8 +14,8 @@ The Free Code Camp Front End Certificate taught me to code front end web develop
                                Basic Javascript:              10 hours
      Object Oriented and Functional Programming:              2 hours 
                       Basic Algorithm Scripting:              50 hours 
-                              JSON API and AJAX:              2 hours       *
-    Intermediate Front End Development Projects:              100 hours
+                              JSON API and AJAX:              2 hours
+    Intermediate Front End Development Projects:              100 hours       *
                Intermediate Algorithm Scripting:              50 hours
                    Advanced Algorithm Scripting:              50 hours
         Advanced Front End Development Projects:              150 hours
