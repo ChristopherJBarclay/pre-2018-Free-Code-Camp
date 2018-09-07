@@ -1,4 +1,4 @@
-#FreeCodeCamp - Front End
+#FreeCodeCamp - Front End - pre 2018 curriculum update
 
 Find Me:  https://www.freecodecamp.org/clesoud
 
